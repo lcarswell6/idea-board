@@ -24,11 +24,11 @@ connection.on('error', (error) => {
 app.use(bodyParser.json())
 
 app.get('/', (req, res) => {
-    res.send("What's good my guy")
+    res.send("What's good my guy?")
 })
 
 
-const PORT = process.env.PORT || 3000
+const PORT = process.env.PORT || 3001
 app.listen(PORT, () => {
     console.log("listening on ", PORT)
 })
